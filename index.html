@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virtual Comics Store!</title>
+        <script src = "​​https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+        <script src = "poster.js"></script>
+
+        <img src = 'captain_america.png' width = '200' height = '250'>
+        <img src = 'joker.png' width = '200' height = '250'>
+        <img src = 'spiderman.png' width = '200' height = '250'>
+        <img src = 'superman.png' width = '200' height = '250'>
+
+    </head>
+
+    <body>
+        <a-scene id = 'main-scene'>
+            <a-sky id = 'main-container' radius = '5000' color = '#fcb997'></a-sky>
+
+            <a-entity id = 'places-container' posters></a-entity>
+
+            <a-camera id = 'camera' wasd-controls = 'enabled: false;'>
+
+                <a-entity
+                id="app-title"
+                position="0 0.73 -1"
+                text="font: exo2bold; align: center; width: 2; color: #000; value: VR Comics Store!"
+                >
+
+                <a-entity
+                id="app-subtitle"
+                position="0 -0.1 0"
+                text="font: dejavu; align: center; width: 1; color: #0F184E; value: See Comics from Your Own Computer!"
+                ></a-entity>
+            </a-entity>
+            
+                <a-entity></a-entity>
+            </a-camera>
+        </a-scene>
+    </body>
+</html>
